@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="c3r-tK-rUc">
             <objects>
-                <tableViewController id="B5J-w3-W4K" sceneMemberID="viewController">
+                <tableViewController id="B5J-w3-W4K" customClass="PhotoTableTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zjx-DZ-NNx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
         <!--Title-->
         <scene sceneID="L5F-GX-bUL">
             <objects>
-                <viewController id="aoa-dn-dzN" sceneMemberID="viewController">
+                <viewController id="aoa-dn-dzN" customClass="AddPhotoViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Blf-e6-DDH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,24 +69,37 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SaveButton:" destination="aoa-dn-dzN" eventType="touchUpInside" id="Jc6-sT-8tK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUe-uO-SBi">
                                 <rect key="frame" x="87" y="495" width="75" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="accessCamera:" destination="aoa-dn-dzN" eventType="touchUpInside" id="hZD-pY-lUL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB1-9d-CFU">
                                 <rect key="frame" x="167" y="569" width="81" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Albumns"/>
+                                <connections>
+                                    <action selector="albumnButton:" destination="aoa-dn-dzN" eventType="touchUpInside" id="O0e-Ty-Dok"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="emI-Gh-aVs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="C5i-c5-bEC"/>
+                    <connections>
+                        <outlet property="PlaceholderPhoto" destination="asf-sk-o5p" id="dmS-7I-mft"/>
+                        <outlet property="textField" destination="RbG-fX-fkN" id="dtC-C6-ZYZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbF-1L-KIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

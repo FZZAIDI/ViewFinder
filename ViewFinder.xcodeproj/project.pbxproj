@@ -14,6 +14,8 @@
 		180143E122C25EAB007AB5DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180143DF22C25EAB007AB5DA /* LaunchScreen.storyboard */; };
 		180143EC22C25EAB007AB5DA /* ViewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180143EB22C25EAB007AB5DA /* ViewFinderTests.swift */; };
 		180143F722C25EAB007AB5DA /* ViewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180143F622C25EAB007AB5DA /* ViewFinderUITests.swift */; };
+		1801440522C2674D007AB5DA /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801440422C2674D007AB5DA /* AddPhotoViewController.swift */; };
+		1801440722C29C4B007AB5DA /* PhotoTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801440622C29C4B007AB5DA /* PhotoTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		180143F222C25EAB007AB5DA /* ViewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180143F622C25EAB007AB5DA /* ViewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderUITests.swift; sourceTree = "<group>"; };
 		180143F822C25EAB007AB5DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1801440422C2674D007AB5DA /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../AddPhotoViewController.swift; sourceTree = "<group>"; };
+		1801440622C29C4B007AB5DA /* PhotoTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoTableTableViewController.swift; path = ../../PhotoTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		180143C722C25EAA007AB5DA = {
 			isa = PBXGroup;
 			children = (
+				1801440422C2674D007AB5DA /* AddPhotoViewController.swift */,
 				180143D222C25EAA007AB5DA /* ViewFinder */,
 				180143EA22C25EAB007AB5DA /* ViewFinderTests */,
 				180143F522C25EAB007AB5DA /* ViewFinderUITests */,
@@ -99,6 +104,7 @@
 			children = (
 				180143D322C25EAA007AB5DA /* AppDelegate.swift */,
 				180143D722C25EAA007AB5DA /* Main.storyboard */,
+				1801440622C29C4B007AB5DA /* PhotoTableTableViewController.swift */,
 				180143DD22C25EAB007AB5DA /* Assets.xcassets */,
 				180143DF22C25EAB007AB5DA /* LaunchScreen.storyboard */,
 				180143E222C25EAB007AB5DA /* Info.plist */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				180143DC22C25EAA007AB5DA /* ViewFinder.xcdatamodeld in Sources */,
+				1801440522C2674D007AB5DA /* AddPhotoViewController.swift in Sources */,
 				180143D422C25EAA007AB5DA /* AppDelegate.swift in Sources */,
+				1801440722C29C4B007AB5DA /* PhotoTableTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
